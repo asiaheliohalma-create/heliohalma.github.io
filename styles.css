@@ -1,0 +1,17 @@
+:root{
+  --yellow:#FFD300;
+  --black:#111;
+  --white:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+body{margin:0;background:var(--white);color:var(--black);}
+.container{max-width:1000px;margin:auto;padding:20px;}
+.site-header{background:var(--white);border-bottom:2px solid var(--yellow);position:sticky;top:0;z-index:10;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;}
+.logo{height:50px;}
+.nav a{margin-left:15px;text-decoration:none;color:var(--black);font-weight:bold;}
+.hero{background:var(--yellow);padding:60px 20px;text-align:center;color:var(--black);}
+.section{padding:40px 20px;}
+.section.alt{background:#f8f8f8;}
+.btn{background:var(--black);color:var(--white);padding:10px 18px;border-radius:8px;text-decoration:none;}
+.site-footer{background:#111;color:#fff;text-align:center;padding:20px;margin-top:40px;}
