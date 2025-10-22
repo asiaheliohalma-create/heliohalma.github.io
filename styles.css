@@ -1,17 +1,19 @@
-:root{
-  --yellow:#FFD300;
-  --black:#111;
-  --white:#fff;
-  font-family:Arial,Helvetica,sans-serif;
-}
-body{margin:0;background:var(--white);color:var(--black);}
-.container{max-width:1000px;margin:auto;padding:20px;}
-.site-header{background:var(--white);border-bottom:2px solid var(--yellow);position:sticky;top:0;z-index:10;}
-.header-inner{display:flex;align-items:center;justify-content:space-between;}
-.logo{height:50px;}
-.nav a{margin-left:15px;text-decoration:none;color:var(--black);font-weight:bold;}
-.hero{background:var(--yellow);padding:60px 20px;text-align:center;color:var(--black);}
-.section{padding:40px 20px;}
-.section.alt{background:#f8f8f8;}
-.btn{background:var(--black);color:var(--white);padding:10px 18px;border-radius:8px;text-decoration:none;}
-.site-footer{background:#111;color:#fff;text-align:center;padding:20px;margin-top:40px;}
+
+:root{--yellow:#FFD300;--black:#111;--white:#fff;--muted:#666;--max-width:1200px;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;}
+*{box-sizing:border-box}body{margin:0;color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased}
+.container{max-width:1200px;margin:0 auto;padding:24px}
+.header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.92);backdrop-filter:blur(4px);border-bottom:1px solid rgba(0,0,0,0.06);z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:12px 24px}
+.brand img{height:100px}
+.nav{display:flex;gap:16px;align-items:center}
+.nav a{text-decoration:none;color:var(--black);font-weight:700;padding:8px 12px;border-radius:8px}
+.nav a:hover{background:var(--yellow)}
+.hero{height:420px;display:flex;align-items:center;justify-content:center;background-position:center;background-size:cover;position:relative;margin-top:120px}
+.hero-content{background:rgba(255,255,255,0.9);padding:24px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.08);text-align:center}
+h1{font-size:2.2rem;margin:0 0 10px}
+.lead{color:var(--muted);margin-bottom:12px}
+.section{padding:72px 24px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:var(--white);padding:20px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.footer{background:#111;color:#fff;padding:28px;text-align:center;margin-top:40px}
+@media(max-width:900px){.nav{display:none}.brand img{height:64px}.hero{height:320px}.grid-2{grid-template-columns:1fr}}
